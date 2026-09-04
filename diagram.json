@@ -19,15 +19,17 @@
       "attrs": { "chain": "4" }
     }
   ],
-  "connections": [
-    [ "uno:5V", "matrix1:V+.2", "red", [ "v38.3", "h-197.8", "v-480" ] ],
-    [ "uno:GND.2", "matrix1:GND", "black", [ "v38.3", "h426.3", "v-470.4" ] ],
-    [ "uno:11", "matrix1:DIN", "green", [ "v-28.8", "h432.6", "v-211.2" ] ],
-    [ "uno:10", "matrix1:CS.2", "green", [ "v0" ] ],
-    [ "uno:12", "matrix1:CLK.2", "green", [ "v0" ] ],
-    [ "matrix1:DOUT", "matrix2:DIN", "green", [ "h-19.04", "v124.8", "h364.8", "v-48" ] ],
-    [ "matrix1:V+.2", "matrix2:V+.2", "red", [ "v-19.2", "h-9.44", "v96" ] ],
-    [ "matrix1:GND", "matrix2:GND", "black", [ "h28.8", "v76.8" ] ]
+"connections":[
+    [ "uno:5V", "matrix1:VCC", "red", [ "v0" ] ],
+    [ "uno:GND.1", "matrix1:GND", "black", [ "v0" ] ],
+    [ "matrix1:VCC", "matrix2:VCC", "red", [ "h0" ] ],
+    [ "matrix1:GND", "matrix2:GND", "black", [ "h0" ] ],
+    [ "uno:12", "matrix1:DIN", "green", [ "v0" ] ],
+    [ "uno:11", "matrix1:CS", "green", [ "v0" ] ],
+    [ "uno:10", "matrix1:CLK", "green", [ "v0" ] ],
+    [ "matrix1:DOUT", "matrix2:DIN", "green", [ "v0" ] ],
+    [ "matrix1:CS", "matrix2:CS", "green", [ "v0" ] ],
+    [ "matrix1:CLK", "matrix2:CLK", "green", [ "v0" ] ]
   ],
   "dependencies": {}
 }
