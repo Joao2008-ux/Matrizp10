@@ -1,0 +1,5 @@
+[wokwi]
+version = 1
+firmware = 'build/uno.hex'
+elf = 'build/uno.elf'
+diagram = 'diagram.json'
